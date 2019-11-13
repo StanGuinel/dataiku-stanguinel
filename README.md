@@ -7,8 +7,8 @@ The route is computed using a modified version of Dijkstra's algorithm where nod
 
 ## Setup
 ``` 
-git clone https://github.com/anfederico/Flaskex
-cd Flaskex
+git clone git@github.com:StanGuinel/dataiku-challenge.git
+cd dataiku-challenge
 pip install -r requirements.txt
 python run.py
 ```
