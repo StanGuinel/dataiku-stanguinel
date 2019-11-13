@@ -5,6 +5,8 @@ Web interface to upload a empire.json file containing the data intercepted by th
 
 The route is computed using a modified version of Dijkstra's algorithm where nodes are tuples of planet, day and fuel left and are dynamically added to the set of node to visit. At each iteration of the algorithm, the node with the lowest capture probability is visited. For time efficiency, this node is retrieved using a min-heap.
 
+The most important function is the odds() functions in the utils.py file that does all the route and odds computation.
+
 ## Setup
 ``` 
 git clone git@github.com:StanGuinel/dataiku-challenge.git
@@ -17,5 +19,4 @@ python run.py
 - Visit http://127.0.0.1:5000/upload
 - Upload the empire.json file
 - See the probability of success and the route to take if there is one.
-
 
