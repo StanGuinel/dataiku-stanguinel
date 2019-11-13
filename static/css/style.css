@@ -1,0 +1,17 @@
+
+
+h1 {
+  color: black;
+}
+
+ul {
+  list-style: inside;
+  text-align: left;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  padding: 10px;
+}

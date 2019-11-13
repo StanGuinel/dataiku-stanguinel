@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+   <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   </head>
+   <body>
+		<div class="center">
+      
+      {% if success == 0 %}
+      <h1> You cannot save the galaxy, failure of the mission is inevitable !</h1>
+
+      <img class="irc_mi" src="https://vignette.wikia.nocookie.net/starwars/images/5/5e/Destruction_of_Despayre-TEA.jpg/revision/latest?cb=20100602031525" width="450" height="284" style="">
+
+      {% else %}
+      <h1> Probability of saving the galaxy is <b>{{ success }}%</b></h1>
+
+      <p> You can reach your destination in {{ days }} days with the following route:</p>
+
+      <ul>
+         {% for step in route %}
+            <li> {{ step }} </li>
+         {% endfor %}
+      </ul>
+      {% endif %}
+      </div>
+      <div class="center">
+      <p>Do you want to try <a href = "{{ url_for('upload_file') }}">
+         <b>another file ?</b></a></p>
+      </div>
+
+   </body>
+</html>

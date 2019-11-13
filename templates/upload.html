@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+   <body>
+   	<div class="center">
+   		<h1> What are the odds ?</h1>
+
+   		<h3 style="color:blue;">A long time ago in a galaxy far far away...</h3>
+
+   	<img class="irc_mi" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png" width="300" height="180" style="">
+
+   	<p>Upload intercepted data to C3PO</p>
+
+      <form action = "http://localhost:5000/uploader" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+      </form>
+   </div>
+   </body>
+</html>
