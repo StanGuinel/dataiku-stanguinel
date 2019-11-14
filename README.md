@@ -12,11 +12,18 @@ The most important function is the <i>odds()</i> functions in the <i>utils.py</i
 git clone git@github.com:StanGuinel/dataiku-challenge.git
 cd dataiku-challenge
 pip install -r requirements.txt
-python run.py
+```
+For the web interface
+``` 
+python web.py
+```
+
+For the command line interface
+``` 
+python command.py -f empire.json 
 ```
 
 ## How to use
-- Visit http://127.0.0.1:5000/upload
-- Upload the empire.json file
-- See the probability of success and the route to take if there is one.
+- Visit http://127.0.0.1:5000/upload and upload the <i>empire.json</i> file
+- To 
 
