@@ -197,7 +197,7 @@ def routeDescription(route):
 	return a string that describes the route to take from a list of states and the number of days
 	'''
 	if len(route) <= 1:
-		return ["Failure !"], 0
+		return ["You cannot save the galaxy, failure of the mission is inevitable !"], 0
 	else:
 		route_description = []
 		for i in range(len(route)-1):
