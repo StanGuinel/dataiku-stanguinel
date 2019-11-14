@@ -1,4 +1,4 @@
-# dataiku-challenge
+# dataiku-stanguinel
 
 ## Description
 Web interface to upload a <i>empire.json</i> file containing the data intercepted by the rebels about the plans of the Empire and to then display the odds (as a percentage) that the Millenium Falcon reaches Endor in time and saves the galaxy and the route to take.
@@ -9,8 +9,8 @@ The most important function is the <i>odds()</i> functions in the <i>utils.py</i
 
 ## Setup
 ``` 
-git clone git@github.com:StanGuinel/dataiku-challenge.git
-cd dataiku-challenge
+git clone git@github.com:StanGuinel/dataiku-stanguinel.git
+cd dataiku-stanguinel
 pip install -r requirements.txt
 ```
 
